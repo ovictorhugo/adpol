@@ -1,0 +1,38 @@
+.firesite__bg--container {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -190px;
+    left: 0;
+    z-index: -999;
+}
+
+main {
+    display: block;
+    position: relative;
+}
+
+.firebase-page-home, .firesite__bg--accent>svg {
+    left: calc(50% + 470px);
+    position: absolute;
+    top: 800px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.firebase-page-home, .firesite__bg--top>svg {
+    left: 1000px;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: -3000px;
+}
+
+.firebase-page-home, .firesite__bg--accent>svg {
+    left: calc(50% + 470px);
+    position: absolute;
+    top: 800px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}

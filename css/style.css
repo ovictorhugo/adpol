@@ -1,0 +1,986 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    font-family: adobe-clean,Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
+    list-style: none;
+}
+
+:root {
+    --color-1: #06346A;
+    --color-2: #105BCE;
+    --color-3: #699BC9;
+    --color-4: #E94B2A;
+    --color-5: #FCB041;
+    --color-6: #006346;
+
+    --border-radius: 3px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: adobe-clean,Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+
+#header_adpol {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 58px;
+    min-width: 320px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#icon_menu_reader {
+    fill: #fff;
+}
+
+.sticky #icon_menu_reader {
+    fill: #6E6E6E;
+}
+
+.sticky #icon_menu_reader:hover {
+    transition: 0.5s;
+    fill: #000000;
+}
+
+#img_logo_header {
+    height: 20px;
+    width: auto;
+}
+
+#logo_header_1 {
+    display: none;
+    padding: 0 20px;
+}
+
+.sticky #logo_header_1 {
+    display: flex;
+}
+
+#logo_header_2 {
+    display: flex;
+    padding: 0 20px;
+}
+
+.sticky #logo_header_2 {
+    display: none;
+}
+
+.header_content_1, .header_content_2 {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.content_li_header, .content_li_header ul {
+    display: flex;
+}
+
+.content_li_header {
+    width: 100%;
+    justify-content: center;
+}
+
+.item_header {
+    height: 100%;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    vertical-align: top;
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    margin: 0 12px;
+}
+
+.sticky .item_header:hover {
+    transition: 0.5s;
+    color: #2c2c2c;
+}
+
+#btn_entrar_em_contato {
+    margin-right: 12px;
+}
+
+.sticky {
+    transition: all 0.5s;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 30%);
+}
+
+.sticky .item_header {
+    color: #6E6E6E;
+}
+
+/* Buttons */
+
+.ButtonContained {
+    background-color: var(--color-2);
+    border-color: transparent;
+    border-radius: var(--border-radius);
+    border-width: 1px;
+    border-style: solid;
+    color: #ffffff;
+
+    min-height: 22px;
+    height: 22px;
+    min-width: 72px;
+    width: auto;
+    padding: 4px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+.ButtonContained:hover {
+    transition: 0.5s;
+    background-color: var(--color-1);
+}
+
+.home_btn_contained {
+    background-color: #fff;
+    color: var(--color-2);
+}
+
+.home_btn_contained:hover {
+    transition: 0.5s;
+    background-color: #fff
+}
+
+.ButtonOutlined {
+    background-color: transparent;
+    border-color: var(--color-2);
+    border-radius: var(--border-radius);
+    border-width: 1px;
+    border-style: solid;
+    color: var(--color-2);
+
+    min-height: 22px;
+    height: 22px;
+    min-width: 72px;
+    width: auto;
+    padding: 4px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+}
+
+.ButtonOutlined:hover {
+    transition: 0.5s;
+    background-color: var(--color-2);
+    border-color: transparent;
+    color: #ffffff;
+}
+
+.home_btn_outlined {
+    border-color: #fff;
+    color: #fff;
+}
+
+.home_btn_outlined:hover {
+    transition: 0.5s;
+    background-color: #fff;
+    border-color: transparent;
+    color: var(--color-2);
+}
+
+/* Footer */
+
+.footer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.content_footer {
+    flex-direction: column;
+    max-width: 1440px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    background-color: #fff;
+    border-top: solid 1px #999999;
+}
+
+.social_media_footer{
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+    align-items: center;
+    margin-bottom: 20px;
+    display: flex;
+    line-height: 1;
+    width: 100%;
+
+    border-top: solid 1px #999999;
+    border-bottom: solid 1px #999999;
+}
+
+.social_media_footer ul {
+    align-items: inherit;
+    display: flex;
+    flex-direction: inherit;
+    flex-wrap: inherit;
+    height: 100%;
+    justify-content: inherit;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding: 12px 0;
+}
+
+.social_media_li {
+    padding: 8px;
+}
+
+.social_media_li_a {
+    display: flex;
+    align-items: center;
+}
+
+.social_media_li_a p {
+    color: #4B4B4B;
+    font-size: 12px;
+    font-weight: 400;
+    margin-left: 6px;
+}
+
+#icon_social_media {
+    fill: #818181;
+}
+
+#txt_media {
+    color: #4B4B4B;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 40px;
+}
+
+.logo_footer {
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+#logo_footer_img {
+    height: 100px;
+    opacity: 80%;
+}
+
+.menu_footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.menu_footer ul {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    min-width: 150px;
+}
+
+.menu_footer_li a {
+    height: 100%;
+    color: #6E6E6E;
+    cursor: pointer;
+    outline: none;
+    vertical-align: top;
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+
+/* Sections */
+
+.section_all {
+    min-height: 100vh;
+    position: relative;
+    padding: 0 20px;
+}
+
+.section_programacao {
+    position: relative;
+    padding: 0 20px;
+}
+
+#section_1, #section_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Section 1*/
+
+#section_1 {
+    padding: 0 20px 80px;
+    align-items: flex-start;
+}
+
+#section_4 {
+    margin-top: 120px;
+}
+
+.data_congresso_content {
+    background-color: var(--color-1);
+    padding: 8px 16px;
+    width: fit-content;
+    border-radius: var(--border-radius);
+    margin-bottom: 12px;
+}
+
+.data_congresso {
+    color: var(--color-5);
+    font-size: 13px;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 52px;
+    line-height: 40px;
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    line-height: 60px;
+    width: 100%;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+    font-weight: 400;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    line-height: 24px;
+    margin: 12px 0 22px;
+}
+
+.btns_home {
+    display: flex;
+}
+
+#bg_home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: auto;
+    z-index: -888;
+}
+
+#img_banner_home {
+    height: auto;
+    width: 600px;
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    z-index: -997;
+}
+
+/* Section 2 */
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.content_height_100vh {
+    min-height: 100vh;
+}
+
+.content_width-100 {
+    width: 100%;
+}
+
+.content_home {
+    flex-direction: column;
+    margin: 0  auto 0 0;
+    max-width: 400px;
+}
+
+.content_bg {
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 30%);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content_dica {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.h4_content_dica  {
+    font-size: 24px;
+    line-height: 24px;
+    padding: 0 0 20px;
+    color: #3c4043;
+    font-weight: 600;
+}
+
+.p_content_dica{
+    font-size: 18px;
+    line-height: 28px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: #3c4043;
+}
+
+.content_flex_column {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div_content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 36px;
+    line-height: 40px;
+    color: #3c4043;
+    font-weight: 700;
+    margin: 0;
+    padding: 0 0 18px;
+}
+
+.h3_forms {
+    margin-bottom: 40px;
+}
+
+.h3_center {
+    width: 100%;
+    text-align: center;
+}
+
+.p_center {
+    width: 100%;
+    text-align: center;
+}
+
+.button_max_content {
+    width: max-content;
+}
+
+.content_hospedagem {
+    align-items: center;
+    justify-content: center;
+}
+
+.txt_div_content {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.p_content {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    color: #3c4043;
+}
+
+#salvador {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* Patrocinadores*/
+
+#patrocinadores_section {
+    display: flex;
+    flex-direction: column;
+}
+
+#patrocinadores{
+    display: flex;
+    margin-top: 60px;
+}
+
+#section_7 {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.patrocinadores_content{
+    display: flex;
+    margin-top: 60px;
+}
+
+.adpol, .adpeb {
+    display: flex;
+    flex-direction: column;
+}
+
+.adpol {
+    margin-right: 20px;
+}
+
+.adpol p, .adpeb p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    color: #fff;
+    font-weight: 700;
+}
+
+#img_adpol, #img_adpeb {
+    height: 60px;
+    width: max-content;
+}
+
+.content_right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    height: 80vh;
+}
+
+/* Section 3*/
+
+.header_programacao {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+#title_programcao {
+    padding: 0;
+}
+
+.datas_programacao {
+    display: flex;
+    flex-direction: row;
+}
+
+.data_programacao {
+    margin-left: 24px;
+}
+
+.data_programacao, .box_data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_data {
+    padding: 8px 16px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 30%);
+    background-color: #fff;
+}
+
+.box_data:hover {
+    transition: 0.5s;
+    background-color: #f6f7f8;
+}
+
+#programacao {
+    margin-top: 120px;
+}
+
+.data_h4 {
+    font-size: 18px;
+    color: var(--color-2);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.p_data_programacao {
+    margin-top: 6px;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    color: #3c4043;
+    font-weight: 600;
+}
+
+/* Input */
+
+#formulario_inscricao {
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 30%);
+    border-radius: 8px;
+}
+
+.two_input_content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_input {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.label_input {
+    color: #3c4043;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3;
+    text-align: left;
+    padding: 4px 0 5px
+}
+
+.input_txt {
+    height: 28px;
+    font-size: 16px;
+    line-height: 1.15;
+    width: 100%;
+    background-color: transparent;
+    color: #3c4043;
+    border-radius: 0;
+    border-width: 0 0 1px;
+    resize: none;
+    overflow-y: hidden;
+    min-width: 48px;
+    border-color: #3c4043;
+    display: flex;
+    outline: 0;
+    list-style: none;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.content_input_50 {
+    width: 48%;
+}
+
+.input_txt:focus {   
+    transition: 500ms ;
+    border-color: var(--color-2);
+    box-shadow: 0 1px 0 var(--color-2);
+}
+
+/* Programação */
+
+.input-section {
+    display: none;
+}
+
+.evento_programacao {
+    background-color: #f6f7f8;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 30%);
+    padding: 40px;
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+.hora_evento_programacao {
+    font-size: 18px;
+    color: var(--color-2);
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 24px;
+}
+
+.titulo_evento_programacao {
+    font-size: 24px;
+    line-height: 40px;
+    color: #3c4043;
+    font-weight: 700;
+}
+
+#dia_01 {
+    display: flex;
+}
+
+
+.section {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.organizacao_section_adpol p, .organizacao_section_adpeb p {
+    color: #6E6E6E;
+    width: 100%;
+}
+
+.organizacao_section_adpol {
+    margin-right: 80px;
+}
+
+#img_adpol_org, #img_adpeb_org {
+    height: 80px;
+    width: max-content;
+}
+
+.content_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.presidente_org {
+    margin-top: 30px;
+}
+
+#circulo_bg {
+    width: max-content;
+    height: 800px;
+    position: absolute;
+    z-index: -999;
+    left: 0;
+}
+#rodolfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+#rodolfo_queiroz {
+    width: 70%;
+}
+
+.content_7 {
+    width: 100%;
+}
+
+.txt_person {
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.div_padding {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#txt_rodolfo {
+    color: var(--color-6);
+}
+
+#txt_fabio {
+    color: var(--color-4);
+}
+
+
+@media (max-width: 767px) {
+    .div_content {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .content_li_header {
+        display: none;
+    }
+}
+
+@media (min-width: 1280px) {
+    .section_all, .section_programacao {
+        padding: 0 80px;
+    }
+
+    #section_1 {
+        padding: 0 80px 120px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .content_bg {
+        padding: 80px 90px;
+    }
+}
+
+@media (max-width: 991px) {
+    .content {
+        flex-direction: column;
+    }
+
+    #rodolfo_queiroz {
+        width: 50%;
+    }
+
+    .div_content {
+        width: 100%;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .forms_content {
+        width: 100%;
+    }
+
+    .content_home {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    #img_banner_home {
+        display: none;
+    }
+
+    .section_all {
+        margin-bottom: 120px;
+    }
+
+    #salvador {
+        width: 100%;
+    }
+
+    #circulo_bg {
+        display: none;
+    }
+
+    .header_programacao {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .datas_programacao {
+        margin-top: 40px;
+    }
+
+    .data_programacao {
+        margin: 0 12px;
+    }
+
+    .menu_footer {
+        flex-direction: column;
+    }
+
+    .logo_footer {
+        margin-bottom: 60px;
+    }
+
+    .content_right {
+        height: auto;
+    }
+
+    #o_congresso { 
+        flex-direction: column-reverse;
+    }
+
+    #section_4 {
+        margin-top: 60px;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .txt_div_content {
+        width: 100%;
+    }
+
+    .organizacao_section_adpol p, .organizacao_section_adpeb p {
+        color: #6E6E6E;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 610px) {
+    .header_content_2 {
+        display: none;
+    }
+
+    #bg_home {
+        width: 90%;
+        height: auto;
+    }
+
+    #salvador {
+        width: 100%;
+    }
+
+    #rodolfo_queiroz {
+        width: 100%;
+    }
+
+    .patrocinadores_content {
+        flex-direction: column;
+    }
+
+    .organizacao_section_adpeb, .organizacao_section_adpol {
+        align-items: center;
+    }
+
+    .organizacao_section_adpol p, .organizacao_section_adpeb p {
+        text-align: center;
+    }
+
+    .organizacao_section_adpol {
+        margin-right: 0;
+    }
+}
+
+
