@@ -87,7 +87,7 @@
     
         <section class="section_all" id="section_1">
     
-            <div class="content content_width-100">
+            <div class="content content_width-100" id="content_g">
                 <div class="div_content">
                     <div class="content_home" id="home">
                         <img id="bg_home" src="img/bg_home.png" alt="">
@@ -100,24 +100,26 @@
                             <a href="https://api.whatsapp.com/send?phone=5571991188091&text=Ol%C3%A1!%20Quero%20informa%C3%A7%C3%B5es%20da%20hospedagem%20do%20Congresso%20de%20Enunciados" class="ButtonOutlined home_btn_outlined" id="btn_entrar_em_contato">Entrar em contato</a>
                             <a href="#section_4" class="ButtonContained home_btn_contained" id="btn_inscrever_header">Inscrever-se</a>
                         </div>
-                    </div>
-                </div>
-    
-                <div class="div_content content_right">
-                    <img id="img_banner_home" src="img/img_banner_home.png" alt="">
-    
-                    <div id="patrocinadores">
-                        <div class="adpol">
-                            <p>Realização</p>
-                            <img id="img_adpol" src="img/logo_adepol.png" alt="">
-                        </div>
-    
-                        <div class="adpeb">
-                            <p>Apoio</p>
-                            <img id="img_adpeb" src="img/logo_adpeb.png" alt="">
+
+                        <img id="img_banner_home" src="img/img_banner_home.png" alt="">
+
+                        <div id="patrocinadores">
+                            <div class="adpol">
+                                <p>Realização</p>
+                                <img id="img_adpol" src="img/logo_adepol.png" alt="">
+                            </div>
+        
+                            <div class="adpeb">
+                                <p>Apoio</p>
+                                <img id="img_adpeb" src="img/logo_adpeb_white.png" alt="">
+                            </div>
                         </div>
                     </div>
+
+                
                 </div>
+    
+                
             </div>
         </section>
     
@@ -129,7 +131,7 @@
                 </div>
     
                 <div class="div_content">
-                    <h3>A Associação dos Delegados <br> de Polícia do Brasil (ADEPOL)</h3>
+                    <h3>A Associação dos Delegados de Polícia do Brasil (ADEPOL)</h3>
     
                     <div class="txt_div_content">
                         <p class="p_content">realiza o I Congresso de Enunciados de Delegados. Em parceria com em parceria com o Sindicato dois Delegados de Polícia da Bahia (ADPEB/Sindicato), o evento acontecerá entre os dias 01 e 04 de dezembro, no hotel Deville, em Salvador/BA. </p>
@@ -140,7 +142,7 @@
     
             <div class="content">
                     <div class="div_content">
-                        <h3>O evento reúne delegados <br> de todo o brasil</h3>
+                        <h3>O evento reúne delegados de todo o brasil</h3>
     
                         <div class="txt_div_content">
                             <p class="p_content">Esta é a primeira edição do evento que tem a finalidade de reunir grupos de delegados de todo o Brasil para discutir e aprovar Enunciado com objetivo de unificar entendimento que servirão de orientação para atuação da atividade do delegado de polícia em todo o país.</p>
@@ -157,9 +159,13 @@
     
         <section class="section_programacao" id="section_3">
     
-            <div class="content content_bg" id="programacao">
+            <div class="content content_bg blur_bg" id="programacao">
                 <div class="header_programacao">
-                    <h3 id="title_programcao">Programação</h3>
+
+                    <div class="icon_e_txt">
+                        <svg class="icon_title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm1-8h4v2h-6V7h2v5z"/></svg>
+                        <h3 id="title_programcao">Programação</h3>
+                    </div>
     
                     <div class="datas_programacao">
     
@@ -260,7 +266,10 @@
                 <div class="div_content">
     
 
-                    <h3>Inscreva-se já!</h3>
+                    <div class="icon_e_txt">
+                        <svg class="icon_title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"><path fill="none" d="M0 0h24v24H0z"/><path d="M15.728 9.686l-1.414-1.414L5 17.586V19h1.414l9.314-9.314zm1.414-1.414l1.414-1.414-1.414-1.414-1.414 1.414 1.414 1.414zM7.242 21H3v-4.243L16.435 3.322a1 1 0 0 1 1.414 0l2.829 2.829a1 1 0 0 1 0 1.414L7.243 21z"/></svg>
+                        <h3 id="title_programcao">Inscreva-se já!</h3>
+                    </div>
     
                     <p class="p_content">Junte-se aos delegados de todo o Brasil para discutir e aprovar o Enunciado que orientará a atuação da atividade do delegado de polícia no país. Faça aqui a sua inscrição para o Congresso de Enunciados de Delegados, de 01 a 03 de dezembro, em Salvador-BA. Acesse a programação completa e inscreva-se já!</p>
                 </div>
@@ -315,7 +324,7 @@
                                 </div>     
                             </div>
     
-                            <a href="" class="ButtonContained" id="btn_inscrever_header">Inscrever-se</a>
+                            <a href="" class="ButtonContained">Inscrever-se</a>
     
                         </form>
                     </div>
@@ -327,30 +336,36 @@
             <div class="content content_height_100vh" id="o_congresso">
                 
                 <div class="div_content">
-                    <h3 class="h3_center">Hospedagem</h3>
+                    <div class="icon_e_txt icon_e_txt_justify">
+                        <svg class="icon_title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"><path fill="none" d="M0 0H24V24H0z"/><path d="M15 3c.552 0 1 .448 1 1v2h5c.552 0 1 .448 1 1v13c0 .552-.448 1-1 1H3c-.552 0-1-.448-1-1V7c0-.552.448-1 1-1h5V4c0-.552.448-1 1-1h6zm1 5H8v11h8V8zM4 8v11h2V8H4zm10-3h-4v1h4V5zm4 3v11h2V8h-2z"/></svg>
+                        <h3 id="title_programcao">Hospedagem</h3>
+                    </div>
     
                     <div class="txt_div_content content_hospedagem">
                         <p class="p_content p_center">Tarifas especiais para participantes.</p>
                         
                         <div class="div_padding">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.344295433269!2d-38.353140685259866!3d-12.949806990870197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161786a7ffff8b%3A0x2fcfe4b59d0dace1!2sHotel%20Deville%20Prime%20Salvador!5e0!3m2!1sen!2sbr!4v1655684604252!5m2!1sen!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.344295433269!2d-38.353140685259866!3d-12.949806990870197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161786a7ffff8b%3A0x2fcfe4b59d0dace1!2sHotel%20Deville%20Prime%20Salvador!5e0!3m2!1sen!2sbr!4v1655684604252!5m2!1sen!2sbr" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
     
-                        <a href="https://api.whatsapp.com/send?phone=5571991188091&text=Ol%C3%A1!%20Quero%20informa%C3%A7%C3%B5es%20da%20hospedagem%20do%20Congresso%20de%20Enunciados" class="ButtonContained button_max_content" id="btn_inscrever_header">Fazer reserva</a>
+                        <a href="https://api.whatsapp.com/send?phone=5571991188091&text=Ol%C3%A1!%20Quero%20informa%C3%A7%C3%B5es%20da%20hospedagem%20do%20Congresso%20de%20Enunciados" class="ButtonContained button_max_content">Fazer reserva</a>
                     </div>
                 </div>
     
                 <div class="div_content">
-                    <h3 class="h3_center">Passagem aérea</h3>
+                    <div class="icon_e_txt icon_e_txt_justify">
+                        <svg class="icon_title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"><path fill="none" d="M0 0h24v24H0z"/><path d="M14 8.947L22 14v2l-8-2.526v5.36l3 1.666V22l-4.5-1L8 22v-1.5l3-1.667v-5.36L3 16v-2l8-5.053V3.5a1.5 1.5 0 0 1 3 0v5.447z"/></svg>
+                        <h3 id="title_programcao">Passagem Aérea</h3>
+                    </div>
     
                     <div class="txt_div_content content_hospedagem">
                         <p class="p_content p_center">Tarifas especiais para o evento. </p>
                         
-                        <div class="div_padding">
+                        <div class="div_padding" id="viagem">
                             
                         </div>
     
-                        <a href="https://api.whatsapp.com/send?phone=5571991188091&text=Ol%C3%A1!%20Quero%20informa%C3%A7%C3%B5es%20da%20hospedagem%20do%20Congresso%20de%20Enunciados" class="ButtonContained button_max_content" id="btn_inscrever_header">Fazer reserva</a>
+                        <a href="https://api.whatsapp.com/send?phone=5571991188091&text=Ol%C3%A1!%20Quero%20informa%C3%A7%C3%B5es%20da%20hospedagem%20do%20Congresso%20de%20Enunciados" class="ButtonContained button_max_content">Fazer reserva</a>
                     </div>
                 </div>
             </div>
@@ -363,19 +378,22 @@
                 </div>
     
                 <div class="div_content">
-                    <h3>Divirta-se <br> na cidade!</h3>
+                    <div class="icon_e_txt">
+                        <svg class="icon_title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"><path fill="none" d="M0 0h24v24H0z"/><path d="M2 5l7-3 6 3 6.303-2.701a.5.5 0 0 1 .697.46V19l-7 3-6-3-6.303 2.701a.5.5 0 0 1-.697-.46V5zm14 14.395l4-1.714V5.033l-4 1.714v12.648zm-2-.131V6.736l-4-2v12.528l4 2zm-6-2.011V4.605L4 6.319v12.648l4-1.714z"/></svg>
+                        <h3 id="title_programcao">Divirta-se na cidade</h3>
+                    </div>
     
                     <div class="txt_div_content">
                         <div class="content_dica">
                             <h4 class="h4_content_dica">Quer conhecer Salvador?</h4>
                             <p class="p_content_dica">Dica sobre o que fazer em Salvador</p>
-                            <a href="https://www.salvadordabahia.com/" class="ButtonContained button_max_content" id="btn_inscrever_header">Clique aqui</a>
+                            <a href="https://www.salvadordabahia.com/" class="ButtonContained" >Clique aqui</a>
                         </div>
                         
                         <div class="content_dica">
                             <h4 class="h4_content_dica">Saiba o que fazer por perto do hotel</h4>
                             <p class="p_content_dica">Conheça os atrativos próximos ao hotel oficial do evento</p>
-                            <a href="https://www.salvadordabahia.com/roteiros/salvador-por-soteropolitanos-itapua/" class="ButtonContained button_max_content" id="btn_inscrever_header">Clique aqui</a>
+                            <a href="https://www.salvadordabahia.com/roteiros/salvador-por-soteropolitanos-itapua/" class="ButtonContained">Clique aqui</a>
                         </div>
                         
                     </div>
@@ -384,20 +402,23 @@
         </section>
 
         <section class="section_programacao" id="section_7">
-            <div class="content content_bg content_7">
+            <div class="content content_bg content_7 blur_bg">
 
                 <div id="patrocinadores_section">
-                    <h3 class="h3_center">Organização</h3>
+                    <div class="icon_e_txt icon_e_txt_justify">
+                        <svg class="icon_title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40"><path fill="none" d="M0 0h24v24H0z"/><path d="M4 22a8 8 0 1 1 16 0h-2a6 6 0 1 0-12 0H4zm8-9c-3.315 0-6-2.685-6-6s2.685-6 6-6 6 2.685 6 6-2.685 6-6 6zm0-2c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z"/></svg>
+                        <h3 id="title_programcao">Organização</h3>
+                    </div>
 
                     <div class="patrocinadores_content">
                         <div class="adpol organizacao_section_adpol">
-                            <p>Realização</p>
+                            <p id="txt_sub_p">Realização</p>
                             <img id="img_adpol_org" src="img/logo_adepol.png" alt="">
                             <p class="presidente_org">PRESIDENTE ADEPOL DO BRASIL – Rodolfo Laterza.</p>
                         </div>
     
                         <div class="adpeb organizacao_section_adpeb">
-                            <p>Apoio</p>
+                            <p id="txt_sub_p">Apoio</p>
                             <img id="img_adpeb_org" src="img/logo_adpeb.png" alt="">
                             <p class="presidente_org">PRESIDENTE ADPEB/SINDICATO – Fabio Lordello </p>
                         </div>
