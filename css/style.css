@@ -40,6 +40,10 @@ html, body {
     scroll-behavior: smooth;
 }
 
+body {
+    background-color: #F0F5F7;
+}
+
 /* Header */
 
 #header_adpol {
@@ -131,7 +135,50 @@ html, body {
 
 #btn_entrar_em_contato {
     margin-right: 12px;
+    color: #fff;
+    border-color: #fff;
 }
+
+.sticky #btn_entrar_em_contato {
+    margin-right: 12px;
+    color: var(--color-2);
+    border-color: var(--color-2);
+}
+
+#btn_entrar_em_contato:hover {
+    margin-right: 12px;
+    color: var(--color-2);
+    border-color: transparent;
+    background-color: #fff;
+}
+
+.sticky #btn_entrar_em_contato:hover {
+    margin-right: 12px;
+    color: #fff;
+    border-color: transparent;
+    background-color: var(--color-2);
+}
+
+#btn_inscrever_header {
+    color: var(--color-2);
+    background-color: #fff;
+}
+
+.sticky #btn_inscrever_header {
+    color: #fff;
+    background-color: var(--color-2);
+}
+
+#btn_inscrever_header:hover {
+    color: var(--color-2);
+    background-color: #fff;
+}
+
+.sticky #btn_inscrever_header:hover {
+    color: #fff;
+    background-color: var(--color-1);
+}
+
 
 .sticky {
     transition: all 0.5s;
@@ -160,8 +207,8 @@ html, body {
     height: 22px;
     min-width: 72px;
     width: auto;
-    padding: 4px 18px;
-    font-size: 14px;
+    padding: 8px 24px;
+    font-size: 16px;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -197,8 +244,8 @@ html, body {
     height: 22px;
     min-width: 72px;
     width: auto;
-    padding: 4px 18px;
-    font-size: 14px;
+    padding: 8px 24px;
+    font-size: 16px;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -342,6 +389,7 @@ html, body {
     min-height: 100vh;
     position: relative;
     padding: 0 20px;
+    margin-bottom: 100px;
 }
 
 .section_programacao {
@@ -359,8 +407,12 @@ html, body {
 /* Section 1*/
 
 #section_1 {
-    padding: 0 20px 80px;
+    padding: 58px 20px 80px;
     align-items: flex-start;
+    margin: 0;
+    height: calc(100vh - 58px);
+    justify-content: flex-start;
+    min-height: auto;
 }
 
 #section_4 {
@@ -368,7 +420,7 @@ html, body {
 }
 
 .data_congresso_content {
-    background-color: var(--color-1);
+    background-color: #fff;
     padding: 8px 16px;
     width: fit-content;
     border-radius: var(--border-radius);
@@ -376,20 +428,26 @@ html, body {
 }
 
 .data_congresso {
-    color: var(--color-5);
-    font-size: 13px;
+    color: var(--color-6);
+    font-size: 15px;
     font-weight: 900;
 }
 
+#patrocinadores{
+    display: flex;
+    margin-top: 40px;
+    
+}
+
 h1 {
-    font-size: 52px;
+    font-size: 72px;
     line-height: 40px;
     color: #fff;
     font-weight: 700;
     margin: 0;
     text-align: left;
     width: 100%;
-    line-height: 60px;
+    line-height: 75px;
     width: 100%;
 }
 
@@ -447,7 +505,7 @@ h2 {
 .content_home {
     flex-direction: column;
     margin: 0  auto 0 0;
-    max-width: 400px;
+    
 }
 
 .content_bg {
@@ -462,8 +520,13 @@ h2 {
 .content_dica {
     margin-bottom: 30px;
     display: flex;
+    border-radius: 8px;
     flex-direction: column;
-    
+    padding: 30px;
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 30%);
+    background-color: rgba(255, 255, 255, 20%);
+    backdrop-filter: blur(20px);
+
 }
 
 .h4_content_dica  {
@@ -475,11 +538,19 @@ h2 {
 }
 
 .p_content_dica{
-    font-size: 18px;
+    font-size: 20px;
     line-height: 28px;
     line-height: 1.5;
     margin-bottom: 30px;
     color: #3c4043;
+}
+
+#viagem {
+    height: 350px;
+    background-image: url(../img/viagem.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: right center;
 }
 
 .content_flex_column {
@@ -495,12 +566,12 @@ h2 {
 }
 
 h3 {
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 42px;
+    line-height: 50px;
     color: #3c4043;
     font-weight: 700;
     margin: 0;
-    padding: 0 0 18px;
+    padding: 0 0 30px;
 }
 
 .h3_forms {
@@ -518,7 +589,7 @@ h3 {
 }
 
 .button_max_content {
-    width: max-content;
+    width: -webkit-fill-available;
 }
 
 .content_hospedagem {
@@ -533,7 +604,7 @@ h3 {
 }
 
 .p_content {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
     margin-bottom: 16px;
     color: #3c4043;
@@ -552,10 +623,6 @@ h3 {
     flex-direction: column;
 }
 
-#patrocinadores{
-    display: flex;
-    margin-top: 60px;
-}
 
 #section_7 {
     min-height: 100vh;
@@ -572,6 +639,7 @@ h3 {
 .adpol, .adpeb {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .adpol {
@@ -659,6 +727,12 @@ h3 {
     font-weight: 600;
 }
 
+#txt_sub_p {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
 /* Input */
 
 #formulario_inscricao {
@@ -682,7 +756,7 @@ h3 {
 .label_input {
     color: #3c4043;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.3;
     text-align: left;
     padding: 4px 0 5px
@@ -725,7 +799,7 @@ h3 {
 }
 
 .evento_programacao {
-    background-color: #f6f7f8;
+    background-color: #fff;
     border-radius: var(--border-radius);
     box-shadow: 0 0 2px 0 rgb(0 0 0 / 30%);
     padding: 40px;
@@ -753,6 +827,25 @@ h3 {
     display: flex;
 }
 
+.icon_e_txt {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.blur_bg {
+    background-color: rgba(255, 255, 255, 20%);
+    backdrop-filter: blur(20px);
+}
+
+.icon_e_txt_justify {
+    justify-content: center;
+}
+
+.icon_title {
+    margin-right: 20px;
+    fill: #3c4043;
+}
 
 .section {
     display: none;
@@ -767,6 +860,7 @@ h3 {
 .organizacao_section_adpol p, .organizacao_section_adpeb p {
     color: #6E6E6E;
     width: 100%;
+    text-align: center;
 }
 
 .organizacao_section_adpol {
@@ -848,7 +942,7 @@ h3 {
     }
 
     #section_1 {
-        padding: 0 80px 120px;
+        padding: 58px 80px 120px;
     }
 }
 
@@ -949,13 +1043,67 @@ h3 {
 }
 
 @media (max-width: 610px) {
+
+    #home {
+        height: calc(100vh - 58px);
+    }
+
+    #patrocinadores {
+        margin-top: 120px;
+    }
+
+    h1 {
+        font-size: 52px;
+    }
+
+    .icon_e_txt {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+
+    .icon_title {
+        width:80px;
+        height: 80px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
     .header_content_2 {
         display: none;
+    }
+
+    .p_content {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    .two_input_content {
+        flex-direction: column;
+    }
+
+    .content_input_50 {
+        width: 100%;
     }
 
     #bg_home {
         width: 90%;
         height: auto;
+        top: auto;
+        left:auto;
+    }
+
+    .content_home {
+        height: auto;
+    }
+
+    #content_geral_home {
+        padding-top: 58px;
+        height: max-content;
+        justify-content: space-between;
     }
 
     #salvador {
