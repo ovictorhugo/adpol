@@ -391,6 +391,10 @@ body {
     margin-bottom: 100px;
 }
 
+main {
+    width: 100%;
+}
+
 .section_programacao {
     position: relative;
     padding: 0 20px;
