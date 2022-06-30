@@ -381,7 +381,6 @@ body {
     margin-bottom: 10px;
 }
 
-
 /* Sections */
 
 .section_all {
@@ -438,7 +437,7 @@ main {
 
 #patrocinadores{
     display: flex;
-    margin-top: 40px;
+    margin-top: 42px;
     
 }
 
