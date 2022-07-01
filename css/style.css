@@ -980,6 +980,10 @@ h3 {
     .content_height_100vh {
         min-height: auto;
     }
+
+    .section_all {
+        min-height: auto;
+    }
     
     #bg_home {
         
