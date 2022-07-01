@@ -1016,11 +1016,18 @@ h3 {
     }
 
     .content_home {
-        height: 100vh;
+        height: calc(100vh - 58px);
         display: flex;
         justify-content: center;
     }
 
+    #viagem {
+        background-size: 100% auto;
+    }
+
+    #section_7 {
+        min-height: auto;
+    }
     #img_banner_home {
         display: none;
     }
