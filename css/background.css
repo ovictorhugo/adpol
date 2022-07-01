@@ -36,3 +36,10 @@ main {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
 }
+
+@media (max-width: 991px) {
+
+    .firesite__bg--container {
+        top: 0;
+    }
+}
