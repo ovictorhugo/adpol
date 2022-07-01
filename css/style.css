@@ -674,7 +674,7 @@ h3 {
 
 #img_adpol, #img_adpeb {
     height: 60px;
-    width: max-content;
+    width: auto;
 }
 
 .content_right {
