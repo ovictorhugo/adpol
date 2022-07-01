@@ -22,6 +22,14 @@ time, mark, audio, video {
     list-style: none;
 }
 
+html {
+    max-width: 100vw;
+    height: auto;
+    -webkit-locale: "pt-BR";
+    direction: ltr;
+    unicode-bidi: isolate;
+}
+
 :root {
     --color-1: #06346A;
     --color-2: #105BCE;
@@ -34,14 +42,17 @@ time, mark, audio, video {
 }
 
 html, body {
-    width: 100%;
-    height: 100%;
+    max-width: 100vw;
     font-family: adobe-clean,Source Sans Pro,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
     background-color: #F0F5F7;
+    margin:0px;
+    padding:0px;
+    width:100%;
+    display: flex;
 }
 
 /* Header */
@@ -391,7 +402,9 @@ body {
 }
 
 main {
-    width: 100%;
+    margin: 0!important;
+    max-width: none!important;
+    padding: 0!important;
 }
 
 .section_programacao {
@@ -963,6 +976,11 @@ h3 {
 }
 
 @media (max-width: 991px) {
+    #bg_home {
+        height: auto;
+        width: 80%;
+        top: 20%;
+    }
     .content {
         flex-direction: column;
     }
