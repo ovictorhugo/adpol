@@ -1025,7 +1025,9 @@ h3 {
         justify-content: center;
     }
 
-    
+    #viagem {
+        background-size: 100% auto;
+    }
 
     #section_7 {
         min-height: auto;
