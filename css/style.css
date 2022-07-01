@@ -976,6 +976,10 @@ h3 {
 }
 
 @media (max-width: 991px) {
+
+    .content_height_100vh {
+        min-height: auto;
+    }
     
     #bg_home {
         
@@ -1021,9 +1025,7 @@ h3 {
         justify-content: center;
     }
 
-    #viagem {
-        background-size: 100% auto;
-    }
+    
 
     #section_7 {
         min-height: auto;
@@ -1097,7 +1099,7 @@ h3 {
         height: 80px;
     }
 
-    .adpol p, .adpeb p {
+    .txt_rel_ap {
         font-size: 20px;
         line-height: 1.5;
         margin-bottom: 16px;
