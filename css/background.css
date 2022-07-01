@@ -11,6 +11,7 @@
 main {
     display: block;
     position: relative;
+    width: inherit;
 }
 
 .firebase-page-home, .firesite__bg--accent>svg {
@@ -41,5 +42,12 @@ main {
 
     .firesite__bg--container {
         top: 0;
+    }
+}
+
+@media (max-width: 610px) {
+
+    .firesite__bg--container {
+        top: -190px;
     }
 }
