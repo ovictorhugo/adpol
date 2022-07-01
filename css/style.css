@@ -892,7 +892,7 @@ h3 {
 
 #img_adpol_org, #img_adpeb_org {
     height: 80px;
-    width: max-content;
+    width: auto;
 }
 
 .content_column {
