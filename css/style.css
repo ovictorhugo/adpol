@@ -420,6 +420,10 @@ main {
 
 /* Section 1*/
 
+#section_2 {
+    margin-top: 200px;
+}
+
 #section_1 {
     padding: 58px 20px 80px;
     align-items: flex-start;
@@ -918,7 +922,7 @@ h3 {
 }
 
 #rodolfo_queiroz {
-    width: 70%;
+    width: 60%;
 }
 
 .content_7 {
@@ -1116,6 +1120,10 @@ h3 {
 }
 
 @media (max-width: 610px) {
+
+    #section_2 {
+        margin-top: 50px;
+    }
 
     .section_all {
         margin-bottom: 24px;
