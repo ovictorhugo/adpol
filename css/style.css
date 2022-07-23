@@ -457,15 +457,26 @@ main {
     
 }
 
+.descricao-rodolfo { 
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: #3c4043;
+    
+    margin-top: 12px;
+}
+
 h1 {
-    font-size: 72px;
+    font-size: 52px;
     line-height: 40px;
     color: #fff;
     font-weight: 700;
     margin: 0;
     text-align: left;
     width: 100%;
-    line-height: 75px;
+    line-height: 55px;
     width: 100%;
 }
 
