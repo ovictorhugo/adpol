@@ -440,7 +440,7 @@ main {
 .data_congresso_content {
     background-color: #fff;
     padding: 8px 16px;
-    width: fit-content;
+    width: min-content;
     border-radius: var(--border-radius);
     margin-bottom: 12px;
 }
@@ -923,7 +923,7 @@ h3 {
 
 #img_adpol_org, #img_adpeb_org {
     height: 80px;
-    width: fit-content;
+    width: min-content;
 }
 
 .content_column {
