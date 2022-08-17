@@ -1047,6 +1047,10 @@ h3 {
         min-height: auto;
     }
 
+    #o_congresso_margin {
+        margin-top: 48px;
+    }
+
     #content_jorge {
         flex-direction: column-reverse;
     }
