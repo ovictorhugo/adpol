@@ -726,7 +726,6 @@ h3 {
 
 #img_adpol, #img_adpeb {
     height: 60px;
-    width: fit-content;
 }
 
 .content_right {
@@ -949,7 +948,6 @@ h3 {
 
 #img_adpol_org, #img_adpeb_org {
     height: 80px;
-    width: min-content;
 }
 
 .content_column {
@@ -1030,6 +1028,13 @@ h3 {
     }
 }
 
+@media (max-width: 1000px) {
+    .content_blur_min { 
+        width: -webkit-fill-available;
+        margin-top: 48px;
+    }
+}
+
 @media (min-width: 1000px) {
     .content_bg, .content_palestrantes {
         padding: 80px 90px;
@@ -1040,6 +1045,10 @@ h3 {
 
     .content_height_100vh {
         min-height: auto;
+    }
+
+    #content_jorge {
+        flex-direction: column-reverse;
     }
 
     .section_all {
