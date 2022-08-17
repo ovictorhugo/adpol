@@ -68,6 +68,10 @@ body {
     z-index: 1000;
 }
 
+#img_banner_home_min {
+    display: none
+}
+
 .menu_header {
     display: flex;
     align-items: center;
@@ -1041,21 +1045,18 @@ h3 {
     }
 }
 
-@media (min-height: 600px) {
-    #o_congresso_margin {
-        margin-top: 80px;
-    }
-}
-
 @media (max-width: 991px) {
 
     .content_height_100vh {
         min-height: auto;
     }
 
-    #o_congresso_margin {
-        margin-top: 80px;
+    
+
+    h3 {
+        padding: 0;
     }
+
 
     #content_jorge {
         flex-direction: column-reverse;
@@ -1122,6 +1123,15 @@ h3 {
     }
     #img_banner_home {
         display: none;
+    }
+
+    #img_banner_home_min {
+        display: flex;
+        width: 85%;
+        margin: 0 auto;
+        padding: 80px 0 0;
+        position: relative;
+        top: 40px
     }
 
     .section_all {
@@ -1202,6 +1212,10 @@ h3 {
 
 @media (max-width: 610px) {
 
+    #section_1 {
+        padding-bottom: 0;
+    }
+
     #section_2 {
         margin-top: 50px;
     }
@@ -1219,9 +1233,7 @@ h3 {
         text-align: left;
     }
 
-    #home {
-        height: calc(100vh - 58px);
-    }
+    
 
     #patrocinadores {
         margin-top: 120px;
