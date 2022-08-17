@@ -94,7 +94,7 @@ body {
 
 #logo_header_1 {
     display: none;
-    padding: 0 20px;
+    padding-right:20px;
 }
 
 .sticky #logo_header_1 {
@@ -103,7 +103,7 @@ body {
 
 #logo_header_2 {
     display: flex;
-    padding: 0 20px;
+    padding-right:20px;
 }
 
 .sticky #logo_header_2 {
@@ -378,7 +378,7 @@ body {
     min-width: 150px;
 }
 
-.menu_footer_li a {
+.menu_footer_li a, .menu_footer_li p {
     height: 100%;
     color: #6E6E6E;
     cursor: pointer;
@@ -440,7 +440,7 @@ main {
 .data_congresso_content {
     background-color: #fff;
     padding: 8px 16px;
-    width: min-content;
+    width: fit-content;
     border-radius: var(--border-radius);
     margin-bottom: 12px;
 }
@@ -480,6 +480,30 @@ h1 {
     width: 100%;
 }
 
+.content_palestrantes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 45px 0 0;
+    
+
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 30%);
+    border-radius: 8px;
+    display: flex;
+}
+
+.content_blur_min {
+    padding: 30px;
+    box-shadow: 0 0 2px 0 rgb(0 0 0 / 30%);
+    background-color: rgba(255, 255, 255, 20%);
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    width: 43%;
+}
+
 h2 {
     font-size: 20px;
     line-height: 40px;
@@ -490,7 +514,9 @@ h2 {
     width: 100%;
     line-height: 24px;
     margin: 12px 0 22px;
-    max-width: 400px;
+
+    
+    
 }
 
 .btns_home {
@@ -953,6 +979,10 @@ h3 {
     width: 60%;
 }
 
+#palestrante {
+    width: 85%;
+}
+
 .content_7 {
     width: 100%;
 }
@@ -1001,7 +1031,7 @@ h3 {
 }
 
 @media (min-width: 1000px) {
-    .content_bg {
+    .content_bg, .content_palestrantes {
         padding: 80px 90px;
     }
 }
@@ -1042,6 +1072,10 @@ h3 {
 
     #rodolfo_queiroz {
         width: 50%;
+    }
+
+    #palestrante {
+        width: 60%
     }
 
     .div_content {
@@ -1243,6 +1277,10 @@ h3 {
     }
 
     #rodolfo_queiroz {
+        width: 100%;
+    }
+
+    #palestrante {
         width: 100%;
     }
 
