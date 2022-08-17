@@ -1041,6 +1041,12 @@ h3 {
     }
 }
 
+@media (min-height: 600px) {
+    #o_congresso_margin {
+        margin-top: 80px;
+    }
+}
+
 @media (max-width: 991px) {
 
     .content_height_100vh {
@@ -1048,7 +1054,7 @@ h3 {
     }
 
     #o_congresso_margin {
-        margin-top: 48px;
+        margin-top: 80px;
     }
 
     #content_jorge {
